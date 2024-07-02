@@ -1,0 +1,25 @@
+body {
+    font-family: "Patrick Hand SC", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #BABABA;
+}
+
+#main {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.title-container {
+    width: 300px;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    margin: 5% 0 0 0;
+}
+
+h1 {
+    margin: 0;
+}
