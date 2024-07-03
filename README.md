@@ -1,4 +1,4 @@
-<h1>Mundologia, un juego para los amantes de los mapas y la geografia. / Mundología, a game for maps and geography enthusiasts.</h1>
+<h1>Mundología, un juego para los amantes de los mapas y la geografia. / Mundologia, a game for maps and geography enthusiasts.</h1>
 <p>En este juego estoy utilizando solamente HTML, CSS y JavaScript, voy actualizando y agregando nuevas funciones todos los días.
 Me emociona este proyecto y estoy abierto a sugerencias y colaboraciones.<br>
 <hr>
