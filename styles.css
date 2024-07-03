@@ -5,6 +5,10 @@ body {
     background-color: white;
 }
 
+body input {
+    display: none;
+}
+
 #main {
     margin: auto;
     display: flex;
@@ -36,6 +40,12 @@ body {
     gap: 5%;
 }
 
+#botones-inicio input:checked + label {
+    transform: translate(4px, 4px);
+    box-shadow: 2px 2px 4px #BABABA;
+    background-color: #cdcdcd;
+}
+
 .regular-button {
     box-shadow: 6px 6px 4px #BABABA;
     cursor: pointer;
@@ -45,6 +55,10 @@ body {
     justify-content: center;
     user-select: none;
     transition-duration: 100ms;
+    border: none;
+    font-family: "Patrick Hand SC", cursive;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .boton-regular {
@@ -55,15 +69,30 @@ body {
     width: 300px;
     margin-top: 30px;
     font-weight: bold;
+    font-size: 1rem;
+}
+
+.boton-siguiente:active {
+    transform: translate(4px, 4px);
+    box-shadow: 2px 2px 4px #BABABA;
+    background-color: #cdcdcd;
 }
 
 .regular-button:hover {
     text-decoration-line: underline;
 }
 
-.regular-button:active {
+.boton-sigu-reg {
+    width: 150px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.boton-sigu-reg:active {
     transform: translate(4px, 4px);
     box-shadow: 2px 2px 4px #BABABA;
+    background-color: #cdcdcd;
 }
 
 h1 {
@@ -72,6 +101,40 @@ h1 {
 
 h2 {
     font-size: 1.2rem;
+}
+
+.gap-ver {
+    gap: 10px;
+}
+
+.gap-hor {
+    gap: 15px;
+}
+
+#choose-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#botones-elegir-mapa {
+    display: flex;
+    flex-direction: column;
+}
+
+#botones-elegir-mapa div {
+    display: flex;
+}
+
+#botones-elegir-mapa input:checked + label {
+    transform: translate(4px, 4px);
+    box-shadow: 2px 2px 4px #BABABA;
+    background-color: #cdcdcd;
+}
+
+#contenedor-btn-sigu-maps {
+    display: flex;
+    gap: 5px;
 }
 
 #map-container {
