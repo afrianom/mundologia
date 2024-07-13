@@ -1679,3 +1679,23 @@ function regresarEscogerMapa() {
 	radio.checked = false;})
 
 }
+
+const mapaMundiEmbeded = document.getElementById('mapa-mundial-svg')
+
+// mapaMundiEmbeded.addEventListener('load', function() {
+// 	const svgDoc = mapaMundiEmbeded.contentDocument;
+  
+// 	if (svgDoc) {
+// 	  // Ahora puedes manipular el SVG dentro de svgDoc
+// 	  const paths = svgDoc.querySelectorAll('path');
+	  
+// 	  paths.forEach(path => {
+// 		// Ejemplo: Cambiar color de relleno a rojo al hacer clic
+// 		path.addEventListener('click', () => {
+// 		  path.style.fill = 'red';
+// 		});
+// 	  });
+// 	} else {
+// 	  console.error('No se pudo acceder al documento SVG.');
+// 	}
+//   });
