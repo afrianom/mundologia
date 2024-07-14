@@ -1,87 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>| Mundología</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
-    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-</head>
-<body>
-    <section id="main">
-        <div id="title-container" class="title-container">
-            <h1>Mundología</h1>
-        </div>
-        <section id="game-style">
-            <div>
-                <h2>Elige que quieres hacer:</h2>
-            </div>
-            <div id="botones-inicio">
-                <input type="radio" name="botones-inicio" id="boton-practicar"></input>
-                <label for="boton-practicar" class="regular-button boton-regular">Practicar</label>
-                <input type="radio" name="botones-inicio" id="boton-jugar"></input>
-                <label for="boton-jugar" class="regular-button boton-regular">Jugar</label>
-            </div>
-            <div id="contenedor-btn-siguiente">
-                <button id="primer-siguiente" class="regular-button boton-siguiente">Siguiente</button>
-            </div>
-        </section>
-        <section id="choose-map">
-            <div>
-                <h2>Elige que mapa quieres:</h2>
-            </div>
-            <div id="botones-elegir-mapa" class="gap-ver">
-                <input type="radio" name="mapas" id="btn-mapamundi">
-                <label for="btn-mapamundi" class="regular-button">Mapa mundial</label>
-
-                <div class="gap-hor">
-                    <input type="radio" name="mapas" id="btn-europa">
-                    <label for="btn-europa" class="regular-button boton-regular">Europa</label>
-
-                    <input type="radio" name="mapas" id="btn-africa">
-                    <label for="btn-africa" class="regular-button boton-regular">África</label>
-                </div>
-
-                <div class="gap-hor">
-                    <input type="radio" name="mapas" id="btn-america-norte">
-                    <label for="btn-america-norte" class="regular-button boton-regular">América del Norte</label>
-
-                    <input type="radio" name="mapas" id="btn-america-sur">
-                    <label for="btn-america-sur" class="regular-button boton-regular">América del Sur</label>
-                </div>
-
-                <div class="gap-hor">
-                    <input type="radio" name="mapas" id="btn-asia">
-                    <label for="btn-asia" class="regular-button boton-regular">Asia</label>
-
-                    <input type="radio" name="mapas" id="btn-oceania">
-                    <label for="btn-oceania" class="regular-button boton-regular">Oceanía</label>
-                </div>
-            </div>
-            <div>
-                <button id="regresar-chooseMap" class="regular-button boton-siguiente">Regresar</button>
-            </div>
-            <div id="contenedor-btn-sigu-maps">
-                <button id="regresar-chooseMap2" class="regular-button boton-sigu-reg">Regresar</button>
-                <button id="siguiente-chooseMap" class="regular-button boton-sigu-reg">Siguiente</button>
-            </div>
-
-        </section>
-        <section id="map-container">
-            <div>
-                <p style="margin-bottom: 6px;">Coloca el cursor sobre el mapa para ver la información de cada país.</p>
-            </div>
-            <div id="btn-cambiar-mapa" class="regular-button boton-siguiente" style="margin-top: 0; margin-bottom: 10px; width: 150px;">Cambiar de mapa</div>
-            <div id="contenedor-mapas-pract"></div>
-        </section>
-        <section id="pruebitas-svg">
-            <object id="mapa-mundial-svg" data="./assets/mapamundi.svg" width="800" height="388"> </object>
-        </section>
-    </section>
-
-    <script src="./index.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
