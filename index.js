@@ -1540,8 +1540,6 @@ const mapaAmericaSur = `${inicioSvg}<g id="AmericaSur">
 </g>${finalSvg}`
 const mapaMundi = `${inicioSvg}${mapaOceania}${mapaAsia}${mapaEuropa}${mapaAfrica}${mapaAmericaNorte}${mapaAmericaSur}`
 
-
-
 //botones
 const logoMundologia = document.getElementById('title-container');
 const botonPracticar = document.getElementById('boton-practicar');
@@ -1581,7 +1579,7 @@ function recargarJuego() {
 }
 
 function botonesPrimeros() {
-    botonPracticar.addEventListener('click', aparecerSiguiente)
+    botonPracticar.addEventListener('click', seccionEscogerMapa)
     botonJugar.addEventListener('click', () => {
         estamosTrabajandoAlert('por ahora solo puedes elegir practicar.');
     })
@@ -1593,11 +1591,11 @@ function estamosTrabajandoAlert(mensajito) {
 ${mensajito}`);
 }
 
-function aparecerSiguiente() {
-    sectionBtnSiguiente.style.display = 'block'
-    botonJugar.disabled = true;
-    primerSiguiente.addEventListener('click', seccionEscogerMapa)
-}
+// function aparecerSiguiente() {
+//     sectionBtnSiguiente.style.display = 'block'
+//     botonJugar.disabled = true;
+//     primerSiguiente.addEventListener('click', seccionEscogerMapa)
+// }
 
 function seccionEscogerMapa() {
 	radioMapas.forEach(radio => {
@@ -1610,21 +1608,14 @@ function seccionEscogerMapa() {
 
     regresarChooseMap.addEventListener('click', regresarAInicio);
 
-    btnMapamundi.addEventListener('click', mostrarRegYSeg);
-    btnEuropa.addEventListener('click', mostrarRegYSeg);
-    btnAfrica.addEventListener('click', mostrarRegYSeg);
-    btnAmericaNorte.addEventListener('click', mostrarRegYSeg);
-    btnAmericaSur.addEventListener('click', mostrarRegYSeg);
-    btnAsia.addEventListener('click', mostrarRegYSeg);
-    btnOceania.addEventListener('click', mostrarRegYSeg);
+    btnMapamundi.addEventListener('click', mapaContenedor);
+    btnEuropa.addEventListener('click', mapaContenedor);
+    btnAfrica.addEventListener('click', mapaContenedor);
+    btnAmericaNorte.addEventListener('click', mapaContenedor);
+    btnAmericaSur.addEventListener('click', mapaContenedor);
+    btnAsia.addEventListener('click', mapaContenedor);
+    btnOceania.addEventListener('click', mapaContenedor);
 
-    regresarChooseMap2.addEventListener('click', regresarAInicio);
-    siguienteChooseMap.addEventListener('click', mapaContenedor)
-}
-
-function mostrarRegYSeg() {
-    sectionChooseMButtonSigReg.style.display = 'flex';
-    regresarChooseMap.style.display = 'none'
 }
 
 function regresarAInicio() {
