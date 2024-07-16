@@ -186,3 +186,9 @@ svg path:hover {
     scale: 300%;
     transform: translate(-290px, -120px);
 }
+
+
+#mapa-prueba {
+    margin-top: 20px;
+    width: 50%;
+}

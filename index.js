@@ -1633,7 +1633,7 @@ function mapaContenedor() {
     let atributos;
 
     if(btnMapamundi.checked) {
-        contenedorHijoMapas.innerHTML = mapaMundi
+        contenedorHijoMapas.innerHTML = mapaMundi		
     } else if(btnEuropa.checked) {
         contenedorHijoMapas.innerHTML = mapaEuropa
 		atributos = document.getElementById('Layer_1');
@@ -1690,3 +1690,4 @@ const mapaMundiEmbeded = document.getElementById('mapa-mundial-svg')
 // 	  console.error('No se pudo acceder al documento SVG.');
 // 	}
 //   });
+
