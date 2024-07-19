@@ -1,12 +1,12 @@
 import {React, useState} from "react";
 
-export default function Home() {
+export default function Home({handleNext}) {
     return (
         <div>
-            <p>Elige que quieres hacer:</p>
+            <h2>Elige que quieres hacer:</h2>
             <div>
-                <button>Jugar</button>
-                <button>Practicar</button>
+                <button onClick={() => handleNext('play')}>Jugar</button>
+                <button onClick={() => handleNext('practice')}>Practicar</button>
             </div>
         </div>
     )

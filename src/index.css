@@ -10,7 +10,7 @@ body {
   font-style: normal;
   background-image: radial-gradient(circle at center, #e5e5e5, white);
   height: 100vh;
-  animation: bg-animation 40s infinite;
+  animation: bg-animation 10s infinite;
   animation-timing-function: ease-in-out;
 }
 
@@ -43,4 +43,19 @@ body {
 
 .title-container:hover {
   text-decoration-line: underline;
+}
+
+.map-color {
+  fill: white;
+  stroke: black;
+}
+
+.world-map g:hover {
+  fill: rgb(199, 199, 199);
+  translate: -1px -1px;
+}
+
+.world-map .all-continents g:hover {
+  fill: rgb(199, 199, 199);
+  translate: -1px -1px;
 }
