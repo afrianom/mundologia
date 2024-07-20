@@ -48,14 +48,19 @@ body {
 .map-color {
   fill: white;
   stroke: black;
+  transition: 500ms;
+}
+
+.world-map g {
+  transition: 500ms;
 }
 
 .world-map g:hover {
   fill: rgb(199, 199, 199);
   translate: -1px -1px;
+  transition: 500ms;
 }
 
-.world-map .all-continents g:hover {
-  fill: rgb(199, 199, 199);
-  translate: -1px -1px;
-}
+/* #mapa-oceania {
+  width: 500px;
+} */
